@@ -1,0 +1,175 @@
+.box{
+    width: 370px;
+    height: 370px;
+    background-color: aqua;
+    translate: 200px  200px;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count:infinite;
+    border: 15px solid black;
+    
+  
+   
+}
+@keyframes rotate {
+    from{
+        border-radius: 0%;
+        transform: rotate(0deg);
+        translate: 200px 200px;
+        transition: 1s steps(5, end);
+    }
+    50%{
+        background-color: rgb(133, 184, 239);
+        animation-direction: alternate-reverse;
+       
+    }
+    70%{
+        translate:700px 200px ;
+    }
+    to{
+        border-radius: 50%;
+        transform: rotate(360deg);
+        translate:200px 200px ;
+        width: 370px;
+        height: 370px;
+        background-color: greenyellow;
+        
+    }
+
+    
+}
+.box2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:blue;
+    translate: 100px 70px;
+    animation-name: rotate1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count:infinite;
+    border: 5px solid black;
+  
+   
+
+}
+
+@keyframes rotate1 {
+    from{
+        border-radius: 0%;
+        transform: rotate(0deg);
+        translate: 100px 40px;
+        transition: 1s steps(5, end);
+        background-color: deeppink;
+    }
+    50%{
+        background-color:orange;
+        animation-direction: alternate-reverse;
+       
+    }
+    70%{
+        translate:90px 70px ;
+    }
+    to{
+        border-radius: 50%;
+        transform: rotate(360deg);
+        translate:150px 10px ;
+        width: 100px;
+        height: 100px;
+        background-color:rgb(119, 0, 255);
+        
+    }
+} 
+.box3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 149, 0);
+    translate: 20px 90px;
+    animation-name: rotate3;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count:infinite;
+    border: 5px solid rgb(4, 0, 10);
+    
+  
+   
+}
+
+@keyframes rotate3 {
+    from{
+        border-radius: 0%;
+        transform: rotate(0deg);
+        translate: 50px 100px;
+        transition: 1s steps(5, end);
+        background-color: deeppink;
+    }
+    50%{
+        background-color:orange;
+        animation-direction: alternate-reverse;
+       
+    }
+    70%{
+        translate:40px 150px ;
+    }
+    to{
+        border-radius: 50%;
+        transform: rotate(360deg);
+        translate:10px 80px ;
+        width: 100px;
+        height: 100px;
+        
+        background-color:yellow;
+        
+    }
+}
+
+.box4{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 149, 0);
+    translate: 0px 0px;
+    animation-name: rot;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+    border: 5px solid black ;
+
+   
+  
+   
+}
+
+@keyframes rot {
+    from{
+        border-radius: 0%;
+        transform: rotate(0deg);
+        translate: 250px 0px;
+        transition: 1s steps(5, end);
+        background-color: deeppink;
+    }
+    50%{
+        background-color:#5255;
+        animation-direction:alternate;
+       
+    }
+    70%{
+        translate:250px 0px ;
+        width: 70px;
+        height: 70px;
+    }
+
+    to{
+        border-radius: 50%;
+        transform: rotate(360deg);
+        translate:150px -30px ;
+        width: 100px;
+        height: 100px;
+        background-color:rgb(221, 25, 25);
+        
+    }
+}

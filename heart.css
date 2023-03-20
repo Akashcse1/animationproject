@@ -1,0 +1,76 @@
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transform: rotate(45deg);
+    animation-name: bg1;
+    
+}
+.box2{
+    position: absolute;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    left: 121px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(45deg);
+    top: 121px;
+  
+    animation-name: bg2;
+}
+
+.box3{
+    position: absolute;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    left: 280px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(-45deg);
+    top: 120px;
+    
+    animation-name: bg3;
+}
+.heart{
+    margin-left: 100px;
+    margin-top: 50px;
+
+    width: 450px;
+    height: 400px;
+    background-color: aquamarine;
+   
+    animation-name: rotate1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 2;
+
+}
+@keyframes rotate1 {
+
+    from{
+translate: 0px 0px;
+transform: rotate(-360deg);
+margin-left: 0px;
+margin-top: 0px;
+    }
+    to{
+        translate: 100px 50px;
+        transform: rotate(360deg);
+    }
+}
+@keyframes bg1 {
+    
+    from{
+       background-color:green;
+    }
+    to{
+   background-color: red;
+   
+    }
+}
